@@ -144,11 +144,13 @@ dmypy.json
 output_*.pdf
 tmp/
 
-# Data directory (keep structure, ignore content)
-data/
-!data/.gitkeep
+# Data directory structure
+data/input/*
 !data/input/.gitkeep
+data/output/*
 !data/output/.gitkeep
+data/archive/*
+!data/archive/.gitkeep
 
 # Logs (private - keep structure)
 logs/*
