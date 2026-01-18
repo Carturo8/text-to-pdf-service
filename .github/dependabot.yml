@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: "poetry" # Specifically for your pyproject.toml
+  - package-ecosystem: "pip" # Handles pyproject.toml/Poetry
     directory: "/"
     schedule:
       interval: "weekly"
