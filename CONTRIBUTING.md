@@ -28,6 +28,22 @@ poetry run pytest --cov=src
 
 ## Development Workflow
 
+This project follows a professional evolution model to ensure stability while allowing active development.
+
+### 1. Workflow Strategy
+
+1.  **Work on Evolution**: The Project Owner works in the `workspace/v1-next` branch.
+2.  **Community Contributions**: If you are a contributor, please **base your work on the `develop` branch** and open your PR toward the `develop` branch.
+3.  **Mandatory PRs**: All changes must be submitted via Pull Request. Direct pushes to `main` or `develop` are blocked.
+4.  **CI Enforcement**: Every PR must pass all Automated Tests and Linting checks in GitHub Actions before it can be merged.
+5.  **Review & Approval**: PRs require a positive review. For community contributions, the Project Owner is the final approver.
+
+### 2. Standards
+
+*   **Architecture**: Follow the Hexagonal Architecture (Ports & Adapters) pattern.
+*   **Testing**: Write unit and integration tests for new functionality.
+*   **Commits**: Use professional commit messages. While strict Conventional Commits are relaxed on `workspace/v1-next`, they are mandatory when merging into `develop` and `main`.
+
 ### 1. Create a Branch
 ```bash
 git checkout -b feature/your-feature-name

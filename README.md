@@ -21,6 +21,14 @@ Distributed under the MIT License. Copyright (c) 2026 Carlos Arturo Rojas Bolañ
 *   **Observability**: Integrated request tracing (`X-Request-ID`) and performance monitoring (`X-Process-Time`)
 *   **Auto-generated Documentation**: Interactive Swagger UI at `/docs`
 
+## Branching Strategy
+
+This project follows a professional branching model for continuous evolution:
+
+*   **`main`**: Production-ready code. Only contains stable, tagged releases (v1.x.x).
+*   **`develop`**: Integration branch for the next release. **IMPORTANT: All Pull Requests from the community must target this branch.**
+*   **`workspace/v1-next`**: **Reserved for project owner.** Active development branch for upcoming version prototyping and internal evolution.
+
 ## Project Structure
 
 ```

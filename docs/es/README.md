@@ -21,6 +21,14 @@ Distribuido bajo la Licencia MIT. Copyright (c) 2026 Carlos Arturo Rojas Bolaño
 *   **Observabilidad**: Trazabilidad de peticiones (`X-Request-ID`) y monitoreo de rendimiento (`X-Process-Time`) integrados
 *   **Documentación Auto-generada**: Swagger UI interactivo en `/docs`
 
+## Estrategia de Ramas
+
+Este proyecto sigue un modelo de ramificación profesional para su evolución continua:
+
+*   **`main`**: Código listo para producción. Solo contiene versiones estables y etiquetadas (v1.x.x).
+*   **`develop`**: Rama de integración para el próximo lanzamiento. **IMPORTANTE: Todos los Pull Requests de la comunidad deben apuntar a esta rama.**
+*   **`workspace/v1-next`**: **Reservada para el dueño del proyecto.** Rama de desarrollo activo para prototipado y evolución interna.
+
 ## Estructura del Proyecto
 
 ```

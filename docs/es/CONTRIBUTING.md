@@ -28,6 +28,22 @@ poetry run pytest --cov=src
 
 ## Flujo de Desarrollo
 
+Este proyecto sigue un modelo de evolución profesional para asegurar la estabilidad permitiendo al mismo tiempo el desarrollo activo.
+
+### 1. Estrategia de Flujo de Trabajo
+
+1.  **Trabajo en Evolución**: El dueño del proyecto trabaja en la rama `workspace/v1-next`.
+2.  **Contribuciones de la Comunidad**: Si eres un contribuidor, por favor **basa tu trabajo en la rama `develop`** y abre tu PR hacia la rama `develop`.
+3.  **PR Obligatorios**: Todos los cambios deben enviarse mediante Pull Request. Los pushes directos a `main` o `develop` están bloqueados.
+4.  **Cumplimiento de CI**: Cada PR debe pasar todas las Pruebas Automatizadas y verificaciones de Linting en GitHub Actions antes de poder ser fusionado.
+5.  **Revisión y Aprobación**: Los PRs requieren una revisión positiva. Para contribuciones de la comunidad, el Dueño del Proyecto es el aprobador final.
+
+### 2. Estándares
+
+*   **Arquitectura**: Seguir el patrón de Arquitectura Hexagonal (Puertos y Adaptadores).
+*   **Pruebas**: Escribir pruebas unitarias y de integración para nueva funcionalidad.
+*   **Commits**: Usar mensajes de commit profesionales. Aunque los Conventional Commits estrictos se relajan en `workspace/v1-next`, son obligatorios al fusionar hacia `develop` y `main`.
+
 ### 1. Crear una Rama
 ```bash
 git checkout -b feature/nombre-de-tu-funcionalidad
