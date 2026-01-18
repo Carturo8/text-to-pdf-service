@@ -145,10 +145,8 @@ output_*.pdf
 tmp/
 
 # Data directory (keep structure, ignore content)
-data/
-!data/.gitkeep
-!data/input/.gitkeep
-!data/output/.gitkeep
+data/**/*
+!data/**/.gitkeep
 
 # Logs (private - keep structure)
 logs/*
