@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    container_name: text-to-pdf-service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+    environment:
+      - ENVIRONMENT=production
+    restart: unless-stopped

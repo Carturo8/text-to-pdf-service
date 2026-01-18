@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "text-to-pdf-service"
+version = "1.0.0"
+description = "Professional Hexagonal Architecture Text-to-PDF Service"
+authors = ["Carlos Arturo Rojas Bolaños"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "~3.11"
+fastapi = "^0.109.0"
+uvicorn = "^0.27.0"
+typer = "^0.9.0"
+markdown = "^3.5"
+jinja2 = "^3.1"
+xhtml2pdf = "^0.2.14"
+reportlab = "<4.1.0"
+python-multipart = "^0.0.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+ruff = "^0.2.0"
+httpx = "^0.26.0"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
