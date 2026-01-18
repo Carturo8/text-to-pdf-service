@@ -236,5 +236,5 @@ He ejecutado un script de prueba que valida:
 
 ---
 
-*Análisis realizado el 18 de enero de 2026*
+*Análisis realizado el 18 de enero de 2025*
 *Basado en pruebas automatizadas de compatibilidad API*
