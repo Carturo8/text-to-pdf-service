@@ -1,7 +1,5 @@
 import typer
 import os
-import sys
-from typing import Optional
 from src.adapters.driven.fs_adapter import LocalFileSystemAdapter
 from src.adapters.driven.pdf_adapter import Xhtml2PdfAdapter
 from src.application.service import ConversionService

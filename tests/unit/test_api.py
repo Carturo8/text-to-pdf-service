@@ -1,7 +1,6 @@
 from fastapi.testclient import TestClient
 from unittest.mock import patch, MagicMock
 from src.adapters.driving.api import app
-from src.domain.exceptions import UnsupportedFormatError
 
 client = TestClient(app)
 

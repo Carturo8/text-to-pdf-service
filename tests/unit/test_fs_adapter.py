@@ -20,6 +20,6 @@ def test_fs_read_file_not_found():
 
 def test_fs_write_file():
     adapter = LocalFileSystemAdapter()
-    with patch("builtins.open", mock_open()) as mock_file:
+    with patch("builtins.open", mock_open()):
         path = adapter.save_file("test.pdf", b"data")
         assert os.path.isabs(path)

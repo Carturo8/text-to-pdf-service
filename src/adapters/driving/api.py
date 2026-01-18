@@ -1,7 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException, BackgroundTasks, Request
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 from typing import List
 import shutil
 import os
@@ -189,7 +188,7 @@ async def convert_document(background_tasks: BackgroundTasks, file: UploadFile =
         logger.warning(f"File too large: {len(file_content)} bytes")
         raise HTTPException(
             status_code=413,
-            detail=f"File size exceeds 10MB limit"
+            detail="File size exceeds 10MB limit"
         )
     
     logger.info(f"Converting file: {filename} ({len(file_content)} bytes)")
@@ -231,7 +230,7 @@ async def convert_document(background_tasks: BackgroundTasks, file: UploadFile =
         cleanup_file(output_path)
         logger.error(f"Conversion error: {str(e)}")
         raise HTTPException(status_code=500, detail=f"PDF generation failed: {str(e)}")
-    except Exception as e:
+    except Exception:
         cleanup_file(input_path)
         cleanup_file(output_path)
         logger.exception("Unexpected error during conversion")

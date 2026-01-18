@@ -1,8 +1,9 @@
 import pytest
-from unittest.mock import Mock, MagicMock
+from unittest.mock import Mock
 from src.application.service import ConversionService
 from src.domain.model import SourceFormat, ConversionResult
 from src.domain.ports import PDFConverterPort, FileSystemPort
+from src.domain.exceptions import UnsupportedFormatError
 
 @pytest.fixture
 def mock_fs():
@@ -38,8 +39,6 @@ def test_convert_file_markdown(mock_fs, mock_converter):
     assert request.source_format == SourceFormat.MARKDOWN
     assert request.content == "# Hello"
 
-from src.domain.exceptions import UnsupportedFormatError
-from src.infrastructure.logger import logger
 
 def test_convert_file_unsupported_format(mock_fs, mock_converter):
     service = ConversionService(mock_converter, mock_fs)

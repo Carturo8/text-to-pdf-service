@@ -1,5 +1,4 @@
 import os
-import pytest
 from src.adapters.driven.pdf_adapter import Xhtml2PdfAdapter
 from src.domain.model import ConversionRequest, SourceFormat
 
