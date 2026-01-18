@@ -1,0 +1,25 @@
+name: "CodiumAI PR-Agent"
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+  issue_comment:
+    types: [created]
+
+jobs:
+  pr_agent:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+      contents: write
+    if: ${{ github.event_name == 'pull_request' || (github:event_name == 'issue_comment' && github:event:comment:body == '/review') }}
+    steps:
+      - name: PR Agent review
+        uses: Codium-ai/pr-agent@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # For public repos or personal ones, GITHUB_TOKEN is often enough.
+          # For more advanced features, you might need an OpenAI key.
+          PR_REVIEWS.INLINE_CODE_COMMENTS: true
+          PR_RESERVED_CODE_LANGUAGE: "python"
