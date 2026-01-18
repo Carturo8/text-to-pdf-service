@@ -1,63 +1,21 @@
 ## Description
-<!-- Describe what this PR does. Include context and motivation. -->
+Briefly describe the changes introduced by this PR.
 
 ## Type of Change
-<!-- Mark with [x] -->
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Documentation update
+- [ ] Refactor / Performance improvement
 
-- [ ] `feat`: New feature
-- [ ] `fix`: Bug fix
-- [ ] `docs`: Documentation
-- [ ] `refactor`: Code refactoring
-- [ ] `test`: Tests
-- [ ] `chore`: Maintenance
-- [ ] `perf`: Performance
-- [ ] `ci`: CI/CD
+## How Has This Been Tested?
+Please describe the tests that you ran to verify your changes.
 
-## Scope
-<!-- Which component does this affect? -->
-- [ ] `api`
-- [ ] `cli`
-- [ ] `pdf`
-- [ ] `domain`
-- [ ] `service`
-- [ ] `docker`
-- [ ] `docs`
-- [ ] Other: ___
-
-## Changes Made
-<!-- List specific changes -->
-- 
-- 
-- 
-
-## Testing
-<!-- How was this tested? -->
-- [ ] Unit tests pass (`poetry run pytest`)
-- [ ] Coverage maintained (>60%)
-- [ ] Manual testing performed
-- [ ] New tests added
-
-## Documentation
-<!-- Documentation updates -->
-- [ ] README updated (if needed)
-- [ ] Spanish docs updated (if applicable)
-- [ ] Swagger docstrings updated
-- [ ] No documentation needed
-
-## Screenshots (if applicable)
-<!-- Add screenshots for UI/visual changes -->
-
-## Checklist
-- [ ] Code follows project style (PEP 8, type hints)
-- [ ] Commit messages follow conventions
-- [ ] All tests pass
-- [ ] No new warnings
-- [ ] Architecture compliance verified
-
-## Related Issues
-<!-- Link related issues: Fixes #123, Closes #456 -->
-
----
-
-**Reviewer Notes:**
-<!-- Any notes for reviewers -->
+## Checklist:
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [ ] My changes generate no new warnings
+- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] New and existing unit tests pass locally with my changes

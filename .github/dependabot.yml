@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "poetry" # Specifically for your pyproject.toml
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "Carturo8"
+    labels:
+      - "dependencies"
+      - "automated"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
